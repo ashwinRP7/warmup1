@@ -13,16 +13,13 @@ class IncrementButton extends React.Component{
     clickedPlus = ()=>{
         this.props.plus();
     }
-    render(){
-    	return(
+    return(
         <div className = "counterIncrement">
             <button className = "decrementButton" onClick = {this.clickedPlus}>
               +
             </button>
         </div>
-    );	
-    }
-    
+    );
 }
 
 class DecrementButton extends React.Component{
@@ -34,16 +31,13 @@ class DecrementButton extends React.Component{
     clickedMinus = () => {
         this.props.minus();
     }
-    render(){
-    	return(
+    return(
         <div className = "counterDecrement">
             <button className = "incrementButton" onClick = {this.clickedMinus}>
               -
             </button>
         </div>
     );
-    }
-    
 }
 
 class Counter extends React.Component{
