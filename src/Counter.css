@@ -1,0 +1,38 @@
+.counterBox{
+    clear: both;
+    content: "";
+    display: table;
+    align-content: center;
+    margin-left: 100px;
+    margin-top: 200px;
+}
+
+.counterOutput{
+    float: left;
+    background-color: white;
+    color: black;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.counterIncrement{
+    float: left;
+}
+
+.incrementButton{
+    padding: 20px;
+    background-color: #00ff94;
+    color: white;
+    font-size: 40px;
+}
+
+.counterDecrement{
+    float: left;
+}
+
+.decrementButton{
+    padding: 20px;
+    background-color: #ff006b;
+    color: white;
+    font-size: 40px;    
+}
