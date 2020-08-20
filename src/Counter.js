@@ -2,49 +2,11 @@ import React from 'react';
 import logo from './logo.svg';
 import './Counter.css';
 import { checkPropTypes } from 'prop-types';
+import IncrementButton from './Incrementbtn';
+import DecrementButton from './Decrementbtn';
 
-class IncrementButton extends React.Component{
-    
-    constructor(props){
-    	super(props);
-    	
-    }
-    
-    clickedPlus = ()=>{
-        this.props.plus();
-    }
-    render(){
-    	return(
-        <div className = "counterIncrement">
-            <button className = "decrementButton" onClick = {this.clickedPlus}>
-              +
-            </button>
-        </div>
-    );	
-    }
-    
-}
 
-class DecrementButton extends React.Component{
 
-    constructor(props){
-    	super(props);
-    }
-    
-    clickedMinus = () => {
-        this.props.minus();
-    }
-    render(){
-    	return(
-        <div className = "counterDecrement">
-            <button className = "incrementButton" onClick = {this.clickedMinus}>
-              -
-            </button>
-        </div>
-    );
-    }
-    
-}
 
 class Counter extends React.Component{
     constructor(props){
@@ -52,10 +14,6 @@ class Counter extends React.Component{
       this.state = {
         initialCount : 0
       };
-    }
-
-    myCallback = (dataFromChild) =>{
-        this.setState({initialCount:dataFromChild});
     }
     
     add(){
